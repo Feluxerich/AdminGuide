@@ -12,8 +12,6 @@ theme:
     logo: material/file-cloud-outline
     repo: octicons/git-branch-16
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.prune
 plugins:
   - search:
