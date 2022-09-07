@@ -1,0 +1,23 @@
+site_name: AdminGuide
+repo_name: feluxerich/AdminGuide
+repo_url: https://github.com/feluxerich/AdminGuide
+edit_uri: blob/master/docs/ # change `blob` to `edit` if you want
+theme:
+  name: material
+  language: en
+  palette:
+    scheme: slate
+    primary: indigo
+  icon:
+    logo: material/file-cloud-outline
+    repo: octicons/git-branch-16
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.prune
+plugins:
+  - search:
+      lang:
+        - en
+  - git-revision-date-localized:
+      enable_creation_date: true
