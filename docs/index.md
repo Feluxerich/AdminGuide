@@ -63,4 +63,5 @@ Last but not least create a network for `docker`:
 
 ```shell
 sudo docker network create --subnet 172.20.255.0/24 database
+sudo docker network create --subnet 172.30.255.0/24 matrix
 ```
