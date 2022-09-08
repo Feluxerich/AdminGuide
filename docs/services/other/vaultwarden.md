@@ -35,7 +35,7 @@ ADMIN_TOKEN=<yoursecureadmintoken>
 WEBSOCKET_ENABLED=true
 ```
 
-Issue a certificate and create a VHosts-File like [here](../0_proxy.md#service-template). Your
+Issue a certificate and create a VHosts-File like [here](../../0_proxy.md#service-template). Your
 VHosts-File should look like this:
 
 ```nginx

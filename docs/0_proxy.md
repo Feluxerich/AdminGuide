@@ -18,6 +18,7 @@ _EOF
 ```
 
 Put this in your `/etc/nginx/sites-available/default` to redirect to `https` by default:
+
 ```nginx
 server {
     listen 80 default_server;
@@ -54,7 +55,7 @@ Create a folder for your service or your service stack and create a `docker-comp
 version: '3.9'
 services:
   service:
-    [...]
+    [ ... ]
     ports:
       - "[::1]:8000:<container_port>"
 ```
