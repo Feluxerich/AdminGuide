@@ -22,6 +22,7 @@ networks:
     name: database
     external: true
 ```
+
 ```shell
 # .mongodb.env
 MONGO_INITDB_ROOT_USERNAME=root
