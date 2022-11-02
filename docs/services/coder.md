@@ -79,9 +79,19 @@ server {
 
 ## Port forwarding
 
+!!! warning ""
+	The Coder Port Forwarding is currently not working. If you want you can do this configuration anyway.
+
 If you need this append the following line to your `.env`-File:
 
 ```
-CODER_WILDCARD_ACCESS_URL=https://*.coder.domain.tld
+CODER_WILDCARD_ACCESS_URL=*.coder.domain.tld
 ```
 
+The command to issue your certificate is now:
+
+```sh
+acme.sh --issue --keylength ec-384 --dns dns_cf -d coder.domain.tld -d *.coder.domain.tld
+```
+
+And you also have to create a DNS-Record named `*.coder.domain.tld` pointing to `coder.domain.tld`
