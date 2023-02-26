@@ -1,8 +1,8 @@
 # Additional Configs (Optional)
 
 ## Mount Samba File Storage
-
-!!! note "" Here: `Hetzner Storage Box`
+!!! note ""
+	In this expample with: `Hetzner Storage Box`
 
 ### Install Dependencies
 
