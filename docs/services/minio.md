@@ -1,7 +1,7 @@
 # MinIO
 
 If you want to setup MinIO your first step should be to check if you have enough storage for whatever you want to do.
-Then you can create a `docker-compose.yaml`-file like this:
+Maybe you want to [mount a Samba File Share](../1_additional_configs.md) to save your MinIO Data on it. Then you can create a `docker-compose.yaml`-file like this:
 
 ```yaml
 version: '3.9'
