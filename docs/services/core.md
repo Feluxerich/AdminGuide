@@ -1,4 +1,7 @@
-# core
+# Core
+
+!!! warning ""
+	The core project is currently not in development
 
 The core-project is a web app which has no specific use case. To set it up correctly you first have to create a `docker-compose.yaml`:
 
