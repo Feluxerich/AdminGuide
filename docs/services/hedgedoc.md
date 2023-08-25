@@ -30,7 +30,11 @@ CMD_DOMAIN=md.domain.tld
 CMD_PROTOCOL_USESSL=true
 CMD_URL_ADDPORT=false
 
+CMD_EMAIL=false
 CMD_ALLOW_EMAIL_REGISTER=false
+
+CMD_ALLOW_FREEURL=true
+CMD_REQUIRE_FREEURL_AUTHENTICATION=true
 
 CMD_GITHUB_CLIENTID=<github_oauth_id>
 CMD_GITHUB_CLIENTSECRET=<github_oauth_secret>
@@ -40,6 +44,13 @@ CMD_ALLOW_ANONYMOUS_EDITS=true
 
 CMD_SESSION_SECRET=<session_secret>
 ```
+
+If you want to create a new note with a custom alias you can just open the editor with a Custom-Aliased-URL.
+To prevent not authenticated users to create a bunch of trash notes you have to be signed in to do this.
+
+In this configuration only the authentication with Github is possible but if you want to allow local users via email
+you have to remove the line that says `CMD_EMAIL=false` and create the accounts manually using the `bin/manage_users`-Script
+in the container.
 
 When you have done this start your container with `dc up -d`,
 [issue a certificate and create a VHost-File](../0_proxy.md#service-template) containing something like this:
